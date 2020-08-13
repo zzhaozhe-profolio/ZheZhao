@@ -8,6 +8,9 @@
         {% for page in site.header.pages %}
           {% if page.slug and page.slug != "" and page.slug != nil %}
             {% assign page_link = page.slug %}
+            {% if page.slug == "CV" %}
+              {% assign page_link = page.slug | append: "/ZZ-CV.pdf" %}
+            {% endif %}
           {% else %}
             {% assign page_link = "/" | append: page.name | downcase %}
           {% endif %}
