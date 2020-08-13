@@ -10,7 +10,7 @@
             {% assign page_link = page.slug %}
             {% assign page_link = page_link | absolute_url %}
             <a class="page-link" href="{{ page_link }}">
-          {% elif page.slug == "CV" %}
+          {% if page.slug == "CV" %}
             {% assign page_link = {{ site.baseurl }}/assets/CV-ZZ.pdf %}
             <a class="page-link" href="{{ page_link }}">
           {% else %}
