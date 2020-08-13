@@ -19,6 +19,8 @@
             {% endif %}
           {% else %}
             {% assign page_link = "/" | append: page.name | downcase %}
+            <a class="page-link" href="{{ page_link }}">
+                {{ page.name }}
           {% endif %}
           
           
