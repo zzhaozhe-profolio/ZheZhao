@@ -8,8 +8,8 @@
         {% for page in site.header.pages %}
           {% if page.slug and page.slug != "" and page.slug != nil %}
             {% assign page_link = page.slug %}
-            {% if page.slug == "CV" %}
-              {% assign page_link = page.slug | append: "/ZZ-CV.pdf" %}
+            {% if page.slug == "cv" %}
+              {% assign page_link = "https://zzhaozhe-profolio.github.io/ZheZhao/CV/CV-ZZ.pdf" %}
             {% endif %}
           {% else %}
             {% assign page_link = "/" | append: page.name | downcase %}
