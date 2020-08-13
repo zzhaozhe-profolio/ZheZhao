@@ -8,8 +8,7 @@
         {% for page in site.header.pages %}
           {% if page.slug and page.slug != "" and page.slug != nil %}
             {% if page.slug == "cv" %}
-              {% assign page_link = "https://zzhaozhe-profolio.github.io/ZheZhao/CV/CV-ZZ.pdf" %}
-              <a class="page-link" src="{{ page_link }}">
+              <a class="page-link" src="https://zzhaozhe-profolio.github.io/ZheZhao/CV/CV-ZZ.pdf">
                 {{ page.name }}
             {% else %}
               {% assign page_link = page.slug %}
